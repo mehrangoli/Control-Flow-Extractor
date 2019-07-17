@@ -10,7 +10,7 @@ For details on the techniques behind see the following publications
 
 
 ## Clone
-Clone this tool using:
+Clone this tool using: https://github.com/mehrangoli/Control-Flow-Extractor.git
 
 
 
@@ -23,13 +23,11 @@ To run this tool without using bash script the following steps are needed
 
 ```bash
 python DataExtractor.py 
-gdb gdb_output <<EOF
+gdb gdb_output 
 source gdb_source_generated.txt
-EOF>>
 python EndFuncExtractor.py
-gdb gdb_output <<EOF
+gdb gdb_output
 source gdb_source_generated_ctrl.txt
-EOF>>
 python ControlFlowGenerator.py
 ```
 
