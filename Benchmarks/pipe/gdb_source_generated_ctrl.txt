@@ -1,0 +1,149 @@
+set logging on gdblog_ctrl.txt
+set logging redirect on
+set height 0
+set confirm off
+def gdb_sc_main
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_sc_main)
+			continue
+		else
+			gdb_sc_main
+		end
+	end
+	continue
+end
+
+break sc_main
+commands
+	info line *0x0000000000406a83
+	set $end_func_line_num_sc_main= $_
+	gdb_sc_main
+end
+
+def gdb_display_print_result
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_display_print_result)
+			continue
+		else
+			gdb_display_print_result
+		end
+	end
+	continue
+end
+
+break display::print_result
+commands
+	info line *0x000000000040ed45
+	set $end_func_line_num_display_print_result= $_
+	gdb_display_print_result
+end
+
+def gdb_stage2_multdiv
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_stage2_multdiv)
+			continue
+		else
+			gdb_stage2_multdiv
+		end
+	end
+	continue
+end
+
+break stage2::multdiv
+commands
+	info line *0x000000000040eac5
+	set $end_func_line_num_stage2_multdiv= $_
+	gdb_stage2_multdiv
+end
+
+def gdb_stage1_addsub
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_stage1_addsub)
+			continue
+		else
+			gdb_stage1_addsub
+		end
+	end
+	continue
+end
+
+break stage1::addsub
+commands
+	info line *0x000000000040e944
+	set $end_func_line_num_stage1_addsub= $_
+	gdb_stage1_addsub
+end
+
+def gdb_stage3_power
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_stage3_power)
+			continue
+		else
+			gdb_stage3_power
+		end
+	end
+	continue
+end
+
+break stage3::power
+commands
+	info line *0x000000000040ebcf
+	set $end_func_line_num_stage3_power= $_
+	gdb_stage3_power
+end
+
+def gdb_numgen_generate
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_numgen_generate)
+			continue
+		else
+			gdb_numgen_generate
+		end
+	end
+	continue
+end
+
+break numgen::generate
+commands
+	info line *0x000000000040eca6
+	set $end_func_line_num_numgen_generate= $_
+	gdb_numgen_generate
+end
+
+run

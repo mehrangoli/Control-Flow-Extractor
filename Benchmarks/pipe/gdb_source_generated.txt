@@ -1,0 +1,53 @@
+set logging on gdblog.txt
+set logging redirect on
+set height 0
+set confirm off
+tbreak sc_main
+commands
+	
+	disassemble sc_main
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak numgen::generate
+commands
+	
+	disassemble numgen::generate
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak stage1::addsub
+commands
+	
+	disassemble stage1::addsub
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak stage2::multdiv
+commands
+	
+	disassemble stage2::multdiv
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak stage3::power
+commands
+	
+	disassemble stage3::power
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak display::print_result
+commands
+	
+	disassemble display::print_result
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+run

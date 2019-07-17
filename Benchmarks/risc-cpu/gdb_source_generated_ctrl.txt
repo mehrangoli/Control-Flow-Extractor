@@ -1,0 +1,341 @@
+set logging on gdblog_ctrl.txt
+set logging redirect on
+set height 0
+set confirm off
+def gdb_sc_main
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_sc_main)
+			continue
+		else
+			gdb_sc_main
+		end
+	end
+	continue
+end
+
+break sc_main
+commands
+	info line *0x000000000040ab8d
+	set $end_func_line_num_sc_main= $_
+	gdb_sc_main
+end
+
+def gdb_floating_entry
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_floating_entry)
+			continue
+		else
+			gdb_floating_entry
+		end
+	end
+	continue
+end
+
+break floating::entry
+commands
+	info line 180
+	set $end_func_line_num_floating_entry= $_
+	gdb_floating_entry
+end
+
+def gdb_bios_init_param
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_bios_init_param)
+			continue
+		else
+			gdb_bios_init_param
+		end
+	end
+	continue
+end
+
+break bios::init_param
+commands
+	info line *0x000000000040b4de
+	set $end_func_line_num_bios_init_param= $_
+	gdb_bios_init_param
+end
+
+def gdb_fetch_init_param
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_fetch_init_param)
+			continue
+		else
+			gdb_fetch_init_param
+		end
+	end
+	continue
+end
+
+break fetch::init_param
+commands
+	info line *0x000000000040bf84
+	set $end_func_line_num_fetch_init_param= $_
+	gdb_fetch_init_param
+end
+
+def gdb_mmxu_entry
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_mmxu_entry)
+			continue
+		else
+			gdb_mmxu_entry
+		end
+	end
+	continue
+end
+
+break mmxu::entry
+commands
+	info line 250
+	set $end_func_line_num_mmxu_entry= $_
+	gdb_mmxu_entry
+end
+
+def gdb_dcache_entry
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_dcache_entry)
+			continue
+		else
+			gdb_dcache_entry
+		end
+	end
+	continue
+end
+
+break dcache::entry
+commands
+	info line 90
+	set $end_func_line_num_dcache_entry= $_
+	gdb_dcache_entry
+end
+
+def gdb_dcache_init_param
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_dcache_init_param)
+			continue
+		else
+			gdb_dcache_init_param
+		end
+	end
+	continue
+end
+
+break dcache::init_param
+commands
+	info line *0x000000000040d536
+	set $end_func_line_num_dcache_init_param= $_
+	gdb_dcache_init_param
+end
+
+def gdb_icache_entry
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_icache_entry)
+			continue
+		else
+			gdb_icache_entry
+		end
+	end
+	continue
+end
+
+break icache::entry
+commands
+	info line 102
+	set $end_func_line_num_icache_entry= $_
+	gdb_icache_entry
+end
+
+def gdb_icache_init_param
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_icache_init_param)
+			continue
+		else
+			gdb_icache_init_param
+		end
+	end
+	continue
+end
+
+break icache::init_param
+commands
+	info line *0x000000000040bbbe
+	set $end_func_line_num_icache_init_param= $_
+	gdb_icache_init_param
+end
+
+def gdb_fetch_entry
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_fetch_entry)
+			continue
+		else
+			gdb_fetch_entry
+		end
+	end
+	continue
+end
+
+break fetch::entry
+commands
+	info line 189
+	set $end_func_line_num_fetch_entry= $_
+	gdb_fetch_entry
+end
+
+def gdb_exec_entry
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_exec_entry)
+			continue
+		else
+			gdb_exec_entry
+		end
+	end
+	continue
+end
+
+break exec::entry
+commands
+	info line 177
+	set $end_func_line_num_exec_entry= $_
+	gdb_exec_entry
+end
+
+def gdb_decode_entry
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_decode_entry)
+			continue
+		else
+			gdb_decode_entry
+		end
+	end
+	continue
+end
+
+break decode::entry
+commands
+	info line 787
+	set $end_func_line_num_decode_entry= $_
+	gdb_decode_entry
+end
+
+def gdb_bios_entry
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_bios_entry)
+			continue
+		else
+			gdb_bios_entry
+		end
+	end
+	continue
+end
+
+break bios::entry
+commands
+	info line 78
+	set $end_func_line_num_bios_entry= $_
+	gdb_bios_entry
+end
+
+def gdb_paging_entry
+	printf "=== time is :  "
+	print sc_time_stamp().m_value
+	tbreak +1
+	commands
+		info line *$pc
+		set $count_line_num = $_
+		
+		if ($count_line_num == $end_func_line_num_paging_entry)
+			continue
+		else
+			gdb_paging_entry
+		end
+	end
+	continue
+end
+
+break paging::entry
+commands
+	info line 86
+	set $end_func_line_num_paging_entry= $_
+	gdb_paging_entry
+end
+
+run

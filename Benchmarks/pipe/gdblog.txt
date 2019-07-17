@@ -1,0 +1,933 @@
+Temporary breakpoint 1 at 0x405e2f: file main.cpp, line 47.
+Temporary breakpoint 2 at 0x40ec3e: file numgen.cpp, line 45.
+Temporary breakpoint 3 at 0x40e8ba: file stage1.cpp, line 45.
+Temporary breakpoint 4 at 0x40ea18: file stage2.cpp, line 45.
+Temporary breakpoint 5 at 0x40eb34: file stage3.cpp, line 47.
+Temporary breakpoint 6 at 0x40ed16: file display.cpp, line 44.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+
+Temporary breakpoint 1, sc_main () at main.cpp:47
+47	  sc_signal<double> in1;
+Dump of assembler code for function sc_main(int, char**):
+   0x0000000000405e16 <+0>:	push   %rbp
+   0x0000000000405e17 <+1>:	mov    %rsp,%rbp
+   0x0000000000405e1a <+4>:	push   %rbx
+   0x0000000000405e1b <+5>:	sub    $0x16e8,%rsp
+   0x0000000000405e22 <+12>:	mov    %edi,-0x16e4(%rbp)
+   0x0000000000405e28 <+18>:	mov    %rsi,-0x16f0(%rbp)
+=> 0x0000000000405e2f <+25>:	lea    -0x2a0(%rbp),%rax
+   0x0000000000405e36 <+32>:	mov    %rax,%rdi
+   0x0000000000405e39 <+35>:	callq  0x4083dc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::sc_signal()>
+   0x0000000000405e3e <+40>:	lea    -0x350(%rbp),%rax
+   0x0000000000405e45 <+47>:	mov    %rax,%rdi
+   0x0000000000405e48 <+50>:	callq  0x4083dc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::sc_signal()>
+   0x0000000000405e4d <+55>:	lea    -0x400(%rbp),%rax
+   0x0000000000405e54 <+62>:	mov    %rax,%rdi
+   0x0000000000405e57 <+65>:	callq  0x4083dc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::sc_signal()>
+   0x0000000000405e5c <+70>:	lea    -0x4b0(%rbp),%rax
+   0x0000000000405e63 <+77>:	mov    %rax,%rdi
+   0x0000000000405e66 <+80>:	callq  0x4083dc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::sc_signal()>
+   0x0000000000405e6b <+85>:	lea    -0x560(%rbp),%rax
+   0x0000000000405e72 <+92>:	mov    %rax,%rdi
+   0x0000000000405e75 <+95>:	callq  0x4083dc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::sc_signal()>
+   0x0000000000405e7a <+100>:	lea    -0x610(%rbp),%rax
+   0x0000000000405e81 <+107>:	mov    %rax,%rdi
+   0x0000000000405e84 <+110>:	callq  0x4083dc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::sc_signal()>
+   0x0000000000405e89 <+115>:	lea    -0x6c0(%rbp),%rax
+   0x0000000000405e90 <+122>:	mov    %rax,%rdi
+   0x0000000000405e93 <+125>:	callq  0x4083dc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::sc_signal()>
+   0x0000000000405e98 <+130>:	lea    -0x790(%rbp),%rax
+   0x0000000000405e9f <+137>:	mov    %rax,%rdi
+   0x0000000000405ea2 <+140>:	callq  0x408838 <sc_core::sc_signal<bool, (sc_core::sc_writer_policy)0>::sc_signal()>
+   0x0000000000405ea7 <+145>:	lea    -0x1f0(%rbp),%rax
+   0x0000000000405eae <+152>:	mov    $0x40efbb,%esi
+   0x0000000000405eb3 <+157>:	mov    %rax,%rdi
+   0x0000000000405eb6 <+160>:	callq  0x405690 <_ZN7sc_core14sc_module_nameC1EPKc@plt>
+   0x0000000000405ebb <+165>:	lea    -0x1f0(%rbp),%rdx
+   0x0000000000405ec2 <+172>:	lea    -0xa30(%rbp),%rax
+   0x0000000000405ec9 <+179>:	mov    %rdx,%rsi
+   0x0000000000405ecc <+182>:	mov    %rax,%rdi
+   0x0000000000405ecf <+185>:	callq  0x407c7a <numgen::numgen(sc_core::sc_module_name)>
+   0x0000000000405ed4 <+190>:	lea    -0x1f0(%rbp),%rax
+   0x0000000000405edb <+197>:	mov    %rax,%rdi
+   0x0000000000405ede <+200>:	callq  0x405c50 <_ZN7sc_core14sc_module_nameD1Ev@plt>
+   0x0000000000405ee3 <+205>:	lea    -0x790(%rbp),%rdx
+   0x0000000000405eea <+212>:	lea    -0x1c0(%rbp),%rax
+   0x0000000000405ef1 <+219>:	mov    %rdx,%rsi
+   0x0000000000405ef4 <+222>:	mov    %rax,%rdi
+   0x0000000000405ef7 <+225>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x0000000000405efc <+230>:	lea    -0x350(%rbp),%rdx
+   0x0000000000405f03 <+237>:	lea    -0x1b0(%rbp),%rax
+   0x0000000000405f0a <+244>:	mov    %rdx,%rsi
+   0x0000000000405f0d <+247>:	mov    %rax,%rdi
+   0x0000000000405f10 <+250>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x0000000000405f15 <+255>:	lea    -0x2a0(%rbp),%rdx
+   0x0000000000405f1c <+262>:	lea    -0x1a0(%rbp),%rax
+   0x0000000000405f23 <+269>:	mov    %rdx,%rsi
+   0x0000000000405f26 <+272>:	mov    %rax,%rdi
+   0x0000000000405f29 <+275>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x0000000000405f2e <+280>:	lea    -0x1c0(%rbp),%rcx
+   0x0000000000405f35 <+287>:	lea    -0x1b0(%rbp),%rdx
+   0x0000000000405f3c <+294>:	lea    -0x1a0(%rbp),%rsi
+   0x0000000000405f43 <+301>:	lea    -0xa30(%rbp),%rax
+   0x0000000000405f4a <+308>:	sub    $0x8,%rsp
+   0x0000000000405f4e <+312>:	pushq  $0x6176a0
+   0x0000000000405f53 <+317>:	pushq  $0x6176a0
+   0x0000000000405f58 <+322>:	pushq  $0x6176a0
+   0x0000000000405f5d <+327>:	pushq  $0x6176a0
+   0x0000000000405f62 <+332>:	pushq  $0x6176a0
+   0x0000000000405f67 <+337>:	pushq  $0x6176a0
+   0x0000000000405f6c <+342>:	pushq  $0x6176a0
+   0x0000000000405f71 <+347>:	pushq  $0x6176a0
+   0x0000000000405f76 <+352>:	pushq  $0x6176a0
+   0x0000000000405f7b <+357>:	pushq  $0x6176a0
+   0x0000000000405f80 <+362>:	pushq  $0x6176a0
+   0x0000000000405f85 <+367>:	pushq  $0x6176a0
+   0x0000000000405f8a <+372>:	pushq  $0x6176a0
+   0x0000000000405f8f <+377>:	pushq  $0x6176a0
+   0x0000000000405f94 <+382>:	pushq  $0x6176a0
+   0x0000000000405f99 <+387>:	pushq  $0x6176a0
+   0x0000000000405f9e <+392>:	pushq  $0x6176a0
+   0x0000000000405fa3 <+397>:	pushq  $0x6176a0
+   0x0000000000405fa8 <+402>:	pushq  $0x6176a0
+   0x0000000000405fad <+407>:	pushq  $0x6176a0
+   0x0000000000405fb2 <+412>:	pushq  $0x6176a0
+   0x0000000000405fb7 <+417>:	pushq  $0x6176a0
+   0x0000000000405fbc <+422>:	pushq  $0x6176a0
+   0x0000000000405fc1 <+427>:	pushq  $0x6176a0
+   0x0000000000405fc6 <+432>:	pushq  $0x6176a0
+   0x0000000000405fcb <+437>:	pushq  $0x6176a0
+   0x0000000000405fd0 <+442>:	pushq  $0x6176a0
+   0x0000000000405fd5 <+447>:	pushq  $0x6176a0
+   0x0000000000405fda <+452>:	pushq  $0x6176a0
+   0x0000000000405fdf <+457>:	pushq  $0x6176a0
+   0x0000000000405fe4 <+462>:	pushq  $0x6176a0
+   0x0000000000405fe9 <+467>:	pushq  $0x6176a0
+   0x0000000000405fee <+472>:	pushq  $0x6176a0
+   0x0000000000405ff3 <+477>:	pushq  $0x6176a0
+   0x0000000000405ff8 <+482>:	pushq  $0x6176a0
+   0x0000000000405ffd <+487>:	pushq  $0x6176a0
+   0x0000000000406002 <+492>:	pushq  $0x6176a0
+   0x0000000000406007 <+497>:	pushq  $0x6176a0
+   0x000000000040600c <+502>:	pushq  $0x6176a0
+   0x0000000000406011 <+507>:	pushq  $0x6176a0
+   0x0000000000406016 <+512>:	pushq  $0x6176a0
+   0x000000000040601b <+517>:	pushq  $0x6176a0
+   0x0000000000406020 <+522>:	pushq  $0x6176a0
+   0x0000000000406025 <+527>:	pushq  $0x6176a0
+   0x000000000040602a <+532>:	pushq  $0x6176a0
+   0x000000000040602f <+537>:	pushq  $0x6176a0
+   0x0000000000406034 <+542>:	pushq  $0x6176a0
+   0x0000000000406039 <+547>:	pushq  $0x6176a0
+   0x000000000040603e <+552>:	pushq  $0x6176a0
+   0x0000000000406043 <+557>:	pushq  $0x6176a0
+   0x0000000000406048 <+562>:	pushq  $0x6176a0
+   0x000000000040604d <+567>:	pushq  $0x6176a0
+   0x0000000000406052 <+572>:	pushq  $0x6176a0
+   0x0000000000406057 <+577>:	pushq  $0x6176a0
+   0x000000000040605c <+582>:	pushq  $0x6176a0
+   0x0000000000406061 <+587>:	pushq  $0x6176a0
+   0x0000000000406066 <+592>:	pushq  $0x6176a0
+   0x000000000040606b <+597>:	pushq  $0x6176a0
+   0x0000000000406070 <+602>:	pushq  $0x6176a0
+   0x0000000000406075 <+607>:	mov    $0x6176a0,%r9d
+   0x000000000040607b <+613>:	mov    $0x6176a0,%r8d
+   0x0000000000406081 <+619>:	mov    %rax,%rdi
+   0x0000000000406084 <+622>:	callq  0x4058c0 <_ZN7sc_core9sc_moduleclERKNS_13sc_bind_proxyES3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_@plt>
+   0x0000000000406089 <+627>:	add    $0x1e0,%rsp
+   0x0000000000406090 <+634>:	lea    -0x190(%rbp),%rax
+   0x0000000000406097 <+641>:	mov    $0x40efc2,%esi
+   0x000000000040609c <+646>:	mov    %rax,%rdi
+   0x000000000040609f <+649>:	callq  0x405690 <_ZN7sc_core14sc_module_nameC1EPKc@plt>
+   0x00000000004060a4 <+654>:	lea    -0x190(%rbp),%rdx
+   0x00000000004060ab <+661>:	lea    -0xdf0(%rbp),%rax
+   0x00000000004060b2 <+668>:	mov    %rdx,%rsi
+   0x00000000004060b5 <+671>:	mov    %rax,%rdi
+   0x00000000004060b8 <+674>:	callq  0x4072b4 <stage1::stage1(sc_core::sc_module_name)>
+   0x00000000004060bd <+679>:	lea    -0x190(%rbp),%rax
+   0x00000000004060c4 <+686>:	mov    %rax,%rdi
+   0x00000000004060c7 <+689>:	callq  0x405c50 <_ZN7sc_core14sc_module_nameD1Ev@plt>
+   0x00000000004060cc <+694>:	lea    -0x2a0(%rbp),%rax
+   0x00000000004060d3 <+701>:	lea    -0xdf0(%rbp),%rdx
+   0x00000000004060da <+708>:	add    $0xd0,%rdx
+   0x00000000004060e1 <+715>:	mov    %rax,%rsi
+   0x00000000004060e4 <+718>:	mov    %rdx,%rdi
+   0x00000000004060e7 <+721>:	callq  0x40897a <sc_core::sc_in<double>::operator()(sc_core::sc_signal_in_if<double> const&)>
+   0x00000000004060ec <+726>:	lea    -0x350(%rbp),%rax
+   0x00000000004060f3 <+733>:	lea    -0xdf0(%rbp),%rdx
+   0x00000000004060fa <+740>:	add    $0x160,%rdx
+   0x0000000000406101 <+747>:	mov    %rax,%rsi
+   0x0000000000406104 <+750>:	mov    %rdx,%rdi
+   0x0000000000406107 <+753>:	callq  0x40897a <sc_core::sc_in<double>::operator()(sc_core::sc_signal_in_if<double> const&)>
+   0x000000000040610c <+758>:	lea    -0x400(%rbp),%rax
+   0x0000000000406113 <+765>:	lea    -0xdf0(%rbp),%rdx
+   0x000000000040611a <+772>:	add    $0x1f0,%rdx
+   0x0000000000406121 <+779>:	mov    %rax,%rsi
+   0x0000000000406124 <+782>:	mov    %rdx,%rdi
+   0x0000000000406127 <+785>:	callq  0x4089ae <sc_core::sc_port_b<sc_core::sc_signal_inout_if<double> >::operator()(sc_core::sc_signal_inout_if<double>&)>
+   0x000000000040612c <+790>:	lea    -0x4b0(%rbp),%rax
+   0x0000000000406133 <+797>:	lea    -0xdf0(%rbp),%rdx
+   0x000000000040613a <+804>:	add    $0x288,%rdx
+   0x0000000000406141 <+811>:	mov    %rax,%rsi
+   0x0000000000406144 <+814>:	mov    %rdx,%rdi
+   0x0000000000406147 <+817>:	callq  0x4089ae <sc_core::sc_port_b<sc_core::sc_signal_inout_if<double> >::operator()(sc_core::sc_signal_inout_if<double>&)>
+   0x000000000040614c <+822>:	lea    -0x790(%rbp),%rax
+   0x0000000000406153 <+829>:	lea    -0xdf0(%rbp),%rdx
+   0x000000000040615a <+836>:	add    $0x320,%rdx
+   0x0000000000406161 <+843>:	mov    %rax,%rsi
+   0x0000000000406164 <+846>:	mov    %rdx,%rdi
+   0x0000000000406167 <+849>:	callq  0x4071f8 <sc_core::sc_in<bool>::operator()(sc_core::sc_signal_in_if<bool> const&)>
+   0x000000000040616c <+854>:	lea    -0x160(%rbp),%rax
+   0x0000000000406173 <+861>:	mov    $0x40efc9,%esi
+   0x0000000000406178 <+866>:	mov    %rax,%rdi
+   0x000000000040617b <+869>:	callq  0x405690 <_ZN7sc_core14sc_module_nameC1EPKc@plt>
+   0x0000000000406180 <+874>:	lea    -0x160(%rbp),%rdx
+   0x0000000000406187 <+881>:	lea    -0x11b0(%rbp),%rax
+   0x000000000040618e <+888>:	mov    %rdx,%rsi
+   0x0000000000406191 <+891>:	mov    %rax,%rdi
+   0x0000000000406194 <+894>:	callq  0x40754e <stage2::stage2(sc_core::sc_module_name)>
+   0x0000000000406199 <+899>:	lea    -0x160(%rbp),%rax
+   0x00000000004061a0 <+906>:	mov    %rax,%rdi
+   0x00000000004061a3 <+909>:	callq  0x405c50 <_ZN7sc_core14sc_module_nameD1Ev@plt>
+   0x00000000004061a8 <+914>:	lea    -0x790(%rbp),%rdx
+   0x00000000004061af <+921>:	lea    -0x130(%rbp),%rax
+   0x00000000004061b6 <+928>:	mov    %rdx,%rsi
+   0x00000000004061b9 <+931>:	mov    %rax,%rdi
+   0x00000000004061bc <+934>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x00000000004061c1 <+939>:	lea    -0x610(%rbp),%rdx
+   0x00000000004061c8 <+946>:	lea    -0x120(%rbp),%rax
+   0x00000000004061cf <+953>:	mov    %rdx,%rsi
+   0x00000000004061d2 <+956>:	mov    %rax,%rdi
+   0x00000000004061d5 <+959>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x00000000004061da <+964>:	lea    -0x560(%rbp),%rdx
+   0x00000000004061e1 <+971>:	lea    -0x110(%rbp),%rax
+   0x00000000004061e8 <+978>:	mov    %rdx,%rsi
+   0x00000000004061eb <+981>:	mov    %rax,%rdi
+   0x00000000004061ee <+984>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x00000000004061f3 <+989>:	lea    -0x4b0(%rbp),%rdx
+   0x00000000004061fa <+996>:	lea    -0x100(%rbp),%rax
+   0x0000000000406201 <+1003>:	mov    %rdx,%rsi
+   0x0000000000406204 <+1006>:	mov    %rax,%rdi
+   0x0000000000406207 <+1009>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x000000000040620c <+1014>:	lea    -0x400(%rbp),%rdx
+   0x0000000000406213 <+1021>:	lea    -0xf0(%rbp),%rax
+   0x000000000040621a <+1028>:	mov    %rdx,%rsi
+   0x000000000040621d <+1031>:	mov    %rax,%rdi
+   0x0000000000406220 <+1034>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x0000000000406225 <+1039>:	lea    -0x130(%rbp),%r8
+   0x000000000040622c <+1046>:	lea    -0x120(%rbp),%rdi
+   0x0000000000406233 <+1053>:	lea    -0x110(%rbp),%rcx
+   0x000000000040623a <+1060>:	lea    -0x100(%rbp),%rdx
+   0x0000000000406241 <+1067>:	lea    -0xf0(%rbp),%rsi
+   0x0000000000406248 <+1074>:	lea    -0x11b0(%rbp),%rax
+   0x000000000040624f <+1081>:	sub    $0x8,%rsp
+   0x0000000000406253 <+1085>:	pushq  $0x6176a0
+   0x0000000000406258 <+1090>:	pushq  $0x6176a0
+   0x000000000040625d <+1095>:	pushq  $0x6176a0
+   0x0000000000406262 <+1100>:	pushq  $0x6176a0
+   0x0000000000406267 <+1105>:	pushq  $0x6176a0
+   0x000000000040626c <+1110>:	pushq  $0x6176a0
+   0x0000000000406271 <+1115>:	pushq  $0x6176a0
+   0x0000000000406276 <+1120>:	pushq  $0x6176a0
+   0x000000000040627b <+1125>:	pushq  $0x6176a0
+   0x0000000000406280 <+1130>:	pushq  $0x6176a0
+   0x0000000000406285 <+1135>:	pushq  $0x6176a0
+   0x000000000040628a <+1140>:	pushq  $0x6176a0
+   0x000000000040628f <+1145>:	pushq  $0x6176a0
+   0x0000000000406294 <+1150>:	pushq  $0x6176a0
+   0x0000000000406299 <+1155>:	pushq  $0x6176a0
+   0x000000000040629e <+1160>:	pushq  $0x6176a0
+   0x00000000004062a3 <+1165>:	pushq  $0x6176a0
+   0x00000000004062a8 <+1170>:	pushq  $0x6176a0
+   0x00000000004062ad <+1175>:	pushq  $0x6176a0
+   0x00000000004062b2 <+1180>:	pushq  $0x6176a0
+   0x00000000004062b7 <+1185>:	pushq  $0x6176a0
+   0x00000000004062bc <+1190>:	pushq  $0x6176a0
+   0x00000000004062c1 <+1195>:	pushq  $0x6176a0
+   0x00000000004062c6 <+1200>:	pushq  $0x6176a0
+   0x00000000004062cb <+1205>:	pushq  $0x6176a0
+   0x00000000004062d0 <+1210>:	pushq  $0x6176a0
+   0x00000000004062d5 <+1215>:	pushq  $0x6176a0
+   0x00000000004062da <+1220>:	pushq  $0x6176a0
+   0x00000000004062df <+1225>:	pushq  $0x6176a0
+   0x00000000004062e4 <+1230>:	pushq  $0x6176a0
+   0x00000000004062e9 <+1235>:	pushq  $0x6176a0
+   0x00000000004062ee <+1240>:	pushq  $0x6176a0
+   0x00000000004062f3 <+1245>:	pushq  $0x6176a0
+   0x00000000004062f8 <+1250>:	pushq  $0x6176a0
+   0x00000000004062fd <+1255>:	pushq  $0x6176a0
+   0x0000000000406302 <+1260>:	pushq  $0x6176a0
+   0x0000000000406307 <+1265>:	pushq  $0x6176a0
+   0x000000000040630c <+1270>:	pushq  $0x6176a0
+   0x0000000000406311 <+1275>:	pushq  $0x6176a0
+   0x0000000000406316 <+1280>:	pushq  $0x6176a0
+   0x000000000040631b <+1285>:	pushq  $0x6176a0
+   0x0000000000406320 <+1290>:	pushq  $0x6176a0
+   0x0000000000406325 <+1295>:	pushq  $0x6176a0
+   0x000000000040632a <+1300>:	pushq  $0x6176a0
+   0x000000000040632f <+1305>:	pushq  $0x6176a0
+   0x0000000000406334 <+1310>:	pushq  $0x6176a0
+   0x0000000000406339 <+1315>:	pushq  $0x6176a0
+   0x000000000040633e <+1320>:	pushq  $0x6176a0
+   0x0000000000406343 <+1325>:	pushq  $0x6176a0
+   0x0000000000406348 <+1330>:	pushq  $0x6176a0
+   0x000000000040634d <+1335>:	pushq  $0x6176a0
+   0x0000000000406352 <+1340>:	pushq  $0x6176a0
+   0x0000000000406357 <+1345>:	pushq  $0x6176a0
+   0x000000000040635c <+1350>:	pushq  $0x6176a0
+   0x0000000000406361 <+1355>:	pushq  $0x6176a0
+   0x0000000000406366 <+1360>:	pushq  $0x6176a0
+   0x000000000040636b <+1365>:	pushq  $0x6176a0
+   0x0000000000406370 <+1370>:	pushq  $0x6176a0
+   0x0000000000406375 <+1375>:	pushq  $0x6176a0
+   0x000000000040637a <+1380>:	mov    %r8,%r9
+   0x000000000040637d <+1383>:	mov    %rdi,%r8
+   0x0000000000406380 <+1386>:	mov    %rax,%rdi
+   0x0000000000406383 <+1389>:	callq  0x4058c0 <_ZN7sc_core9sc_moduleclERKNS_13sc_bind_proxyES3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_@plt>
+   0x0000000000406388 <+1394>:	add    $0x1e0,%rsp
+   0x000000000040638f <+1401>:	lea    -0xe0(%rbp),%rax
+   0x0000000000406396 <+1408>:	mov    $0x40efd0,%esi
+   0x000000000040639b <+1413>:	mov    %rax,%rdi
+   0x000000000040639e <+1416>:	callq  0x405690 <_ZN7sc_core14sc_module_nameC1EPKc@plt>
+   0x00000000004063a3 <+1421>:	lea    -0xe0(%rbp),%rdx
+   0x00000000004063aa <+1428>:	lea    -0x14e0(%rbp),%rax
+   0x00000000004063b1 <+1435>:	mov    %rdx,%rsi
+   0x00000000004063b4 <+1438>:	mov    %rax,%rdi
+   0x00000000004063b7 <+1441>:	callq  0x4077e8 <stage3::stage3(sc_core::sc_module_name)>
+   0x00000000004063bc <+1446>:	lea    -0xe0(%rbp),%rax
+   0x00000000004063c3 <+1453>:	mov    %rax,%rdi
+   0x00000000004063c6 <+1456>:	callq  0x405c50 <_ZN7sc_core14sc_module_nameD1Ev@plt>
+   0x00000000004063cb <+1461>:	lea    -0x790(%rbp),%rdx
+   0x00000000004063d2 <+1468>:	lea    -0xb0(%rbp),%rax
+   0x00000000004063d9 <+1475>:	mov    %rdx,%rsi
+   0x00000000004063dc <+1478>:	mov    %rax,%rdi
+   0x00000000004063df <+1481>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x00000000004063e4 <+1486>:	lea    -0x6c0(%rbp),%rdx
+   0x00000000004063eb <+1493>:	lea    -0xa0(%rbp),%rax
+   0x00000000004063f2 <+1500>:	mov    %rdx,%rsi
+   0x00000000004063f5 <+1503>:	mov    %rax,%rdi
+   0x00000000004063f8 <+1506>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x00000000004063fd <+1511>:	lea    -0x610(%rbp),%rdx
+   0x0000000000406404 <+1518>:	lea    -0x90(%rbp),%rax
+   0x000000000040640b <+1525>:	mov    %rdx,%rsi
+   0x000000000040640e <+1528>:	mov    %rax,%rdi
+   0x0000000000406411 <+1531>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x0000000000406416 <+1536>:	lea    -0x560(%rbp),%rdx
+   0x000000000040641d <+1543>:	lea    -0x80(%rbp),%rax
+   0x0000000000406421 <+1547>:	mov    %rdx,%rsi
+   0x0000000000406424 <+1550>:	mov    %rax,%rdi
+   0x0000000000406427 <+1553>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x000000000040642c <+1558>:	lea    -0xb0(%rbp),%rdi
+   0x0000000000406433 <+1565>:	lea    -0xa0(%rbp),%rcx
+   0x000000000040643a <+1572>:	lea    -0x90(%rbp),%rdx
+   0x0000000000406441 <+1579>:	lea    -0x80(%rbp),%rsi
+   0x0000000000406445 <+1583>:	lea    -0x14e0(%rbp),%rax
+   0x000000000040644c <+1590>:	sub    $0x8,%rsp
+   0x0000000000406450 <+1594>:	pushq  $0x6176a0
+   0x0000000000406455 <+1599>:	pushq  $0x6176a0
+   0x000000000040645a <+1604>:	pushq  $0x6176a0
+   0x000000000040645f <+1609>:	pushq  $0x6176a0
+   0x0000000000406464 <+1614>:	pushq  $0x6176a0
+   0x0000000000406469 <+1619>:	pushq  $0x6176a0
+   0x000000000040646e <+1624>:	pushq  $0x6176a0
+   0x0000000000406473 <+1629>:	pushq  $0x6176a0
+   0x0000000000406478 <+1634>:	pushq  $0x6176a0
+   0x000000000040647d <+1639>:	pushq  $0x6176a0
+   0x0000000000406482 <+1644>:	pushq  $0x6176a0
+   0x0000000000406487 <+1649>:	pushq  $0x6176a0
+   0x000000000040648c <+1654>:	pushq  $0x6176a0
+   0x0000000000406491 <+1659>:	pushq  $0x6176a0
+   0x0000000000406496 <+1664>:	pushq  $0x6176a0
+   0x000000000040649b <+1669>:	pushq  $0x6176a0
+   0x00000000004064a0 <+1674>:	pushq  $0x6176a0
+   0x00000000004064a5 <+1679>:	pushq  $0x6176a0
+   0x00000000004064aa <+1684>:	pushq  $0x6176a0
+   0x00000000004064af <+1689>:	pushq  $0x6176a0
+   0x00000000004064b4 <+1694>:	pushq  $0x6176a0
+   0x00000000004064b9 <+1699>:	pushq  $0x6176a0
+   0x00000000004064be <+1704>:	pushq  $0x6176a0
+   0x00000000004064c3 <+1709>:	pushq  $0x6176a0
+   0x00000000004064c8 <+1714>:	pushq  $0x6176a0
+   0x00000000004064cd <+1719>:	pushq  $0x6176a0
+   0x00000000004064d2 <+1724>:	pushq  $0x6176a0
+   0x00000000004064d7 <+1729>:	pushq  $0x6176a0
+   0x00000000004064dc <+1734>:	pushq  $0x6176a0
+   0x00000000004064e1 <+1739>:	pushq  $0x6176a0
+   0x00000000004064e6 <+1744>:	pushq  $0x6176a0
+   0x00000000004064eb <+1749>:	pushq  $0x6176a0
+   0x00000000004064f0 <+1754>:	pushq  $0x6176a0
+   0x00000000004064f5 <+1759>:	pushq  $0x6176a0
+   0x00000000004064fa <+1764>:	pushq  $0x6176a0
+   0x00000000004064ff <+1769>:	pushq  $0x6176a0
+   0x0000000000406504 <+1774>:	pushq  $0x6176a0
+   0x0000000000406509 <+1779>:	pushq  $0x6176a0
+   0x000000000040650e <+1784>:	pushq  $0x6176a0
+   0x0000000000406513 <+1789>:	pushq  $0x6176a0
+   0x0000000000406518 <+1794>:	pushq  $0x6176a0
+   0x000000000040651d <+1799>:	pushq  $0x6176a0
+   0x0000000000406522 <+1804>:	pushq  $0x6176a0
+   0x0000000000406527 <+1809>:	pushq  $0x6176a0
+   0x000000000040652c <+1814>:	pushq  $0x6176a0
+   0x0000000000406531 <+1819>:	pushq  $0x6176a0
+   0x0000000000406536 <+1824>:	pushq  $0x6176a0
+   0x000000000040653b <+1829>:	pushq  $0x6176a0
+   0x0000000000406540 <+1834>:	pushq  $0x6176a0
+   0x0000000000406545 <+1839>:	pushq  $0x6176a0
+   0x000000000040654a <+1844>:	pushq  $0x6176a0
+   0x000000000040654f <+1849>:	pushq  $0x6176a0
+   0x0000000000406554 <+1854>:	pushq  $0x6176a0
+   0x0000000000406559 <+1859>:	pushq  $0x6176a0
+   0x000000000040655e <+1864>:	pushq  $0x6176a0
+   0x0000000000406563 <+1869>:	pushq  $0x6176a0
+   0x0000000000406568 <+1874>:	pushq  $0x6176a0
+   0x000000000040656d <+1879>:	pushq  $0x6176a0
+   0x0000000000406572 <+1884>:	pushq  $0x6176a0
+   0x0000000000406577 <+1889>:	mov    $0x6176a0,%r9d
+   0x000000000040657d <+1895>:	mov    %rdi,%r8
+   0x0000000000406580 <+1898>:	mov    %rax,%rdi
+   0x0000000000406583 <+1901>:	callq  0x4058c0 <_ZN7sc_core9sc_moduleclERKNS_13sc_bind_proxyES3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_@plt>
+   0x0000000000406588 <+1906>:	add    $0x1e0,%rsp
+   0x000000000040658f <+1913>:	lea    -0x70(%rbp),%rax
+   0x0000000000406593 <+1917>:	mov    $0x40efd7,%esi
+   0x0000000000406598 <+1922>:	mov    %rax,%rdi
+   0x000000000040659b <+1925>:	callq  0x405690 <_ZN7sc_core14sc_module_nameC1EPKc@plt>
+   0x00000000004065a0 <+1930>:	lea    -0x70(%rbp),%rdx
+   0x00000000004065a4 <+1934>:	lea    -0x16e0(%rbp),%rax
+   0x00000000004065ab <+1941>:	mov    %rdx,%rsi
+   0x00000000004065ae <+1944>:	mov    %rax,%rdi
+   0x00000000004065b1 <+1947>:	callq  0x407a5a <display::display(sc_core::sc_module_name)>
+   0x00000000004065b6 <+1952>:	lea    -0x70(%rbp),%rax
+   0x00000000004065ba <+1956>:	mov    %rax,%rdi
+   0x00000000004065bd <+1959>:	callq  0x405c50 <_ZN7sc_core14sc_module_nameD1Ev@plt>
+   0x00000000004065c2 <+1964>:	lea    -0x790(%rbp),%rdx
+   0x00000000004065c9 <+1971>:	lea    -0x40(%rbp),%rax
+   0x00000000004065cd <+1975>:	mov    %rdx,%rsi
+   0x00000000004065d0 <+1978>:	mov    %rax,%rdi
+   0x00000000004065d3 <+1981>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x00000000004065d8 <+1986>:	lea    -0x6c0(%rbp),%rdx
+   0x00000000004065df <+1993>:	lea    -0x30(%rbp),%rax
+   0x00000000004065e3 <+1997>:	mov    %rdx,%rsi
+   0x00000000004065e6 <+2000>:	mov    %rax,%rdi
+   0x00000000004065e9 <+2003>:	callq  0x405630 <_ZN7sc_core13sc_bind_proxyC1ERNS_12sc_interfaceE@plt>
+   0x00000000004065ee <+2008>:	lea    -0x40(%rbp),%rdx
+   0x00000000004065f2 <+2012>:	lea    -0x30(%rbp),%rsi
+   0x00000000004065f6 <+2016>:	lea    -0x16e0(%rbp),%rax
+   0x00000000004065fd <+2023>:	sub    $0x8,%rsp
+   0x0000000000406601 <+2027>:	pushq  $0x6176a0
+   0x0000000000406606 <+2032>:	pushq  $0x6176a0
+   0x000000000040660b <+2037>:	pushq  $0x6176a0
+   0x0000000000406610 <+2042>:	pushq  $0x6176a0
+   0x0000000000406615 <+2047>:	pushq  $0x6176a0
+   0x000000000040661a <+2052>:	pushq  $0x6176a0
+   0x000000000040661f <+2057>:	pushq  $0x6176a0
+   0x0000000000406624 <+2062>:	pushq  $0x6176a0
+   0x0000000000406629 <+2067>:	pushq  $0x6176a0
+   0x000000000040662e <+2072>:	pushq  $0x6176a0
+   0x0000000000406633 <+2077>:	pushq  $0x6176a0
+   0x0000000000406638 <+2082>:	pushq  $0x6176a0
+   0x000000000040663d <+2087>:	pushq  $0x6176a0
+   0x0000000000406642 <+2092>:	pushq  $0x6176a0
+   0x0000000000406647 <+2097>:	pushq  $0x6176a0
+   0x000000000040664c <+2102>:	pushq  $0x6176a0
+   0x0000000000406651 <+2107>:	pushq  $0x6176a0
+   0x0000000000406656 <+2112>:	pushq  $0x6176a0
+   0x000000000040665b <+2117>:	pushq  $0x6176a0
+   0x0000000000406660 <+2122>:	pushq  $0x6176a0
+   0x0000000000406665 <+2127>:	pushq  $0x6176a0
+   0x000000000040666a <+2132>:	pushq  $0x6176a0
+   0x000000000040666f <+2137>:	pushq  $0x6176a0
+   0x0000000000406674 <+2142>:	pushq  $0x6176a0
+   0x0000000000406679 <+2147>:	pushq  $0x6176a0
+   0x000000000040667e <+2152>:	pushq  $0x6176a0
+   0x0000000000406683 <+2157>:	pushq  $0x6176a0
+   0x0000000000406688 <+2162>:	pushq  $0x6176a0
+   0x000000000040668d <+2167>:	pushq  $0x6176a0
+   0x0000000000406692 <+2172>:	pushq  $0x6176a0
+   0x0000000000406697 <+2177>:	pushq  $0x6176a0
+   0x000000000040669c <+2182>:	pushq  $0x6176a0
+   0x00000000004066a1 <+2187>:	pushq  $0x6176a0
+   0x00000000004066a6 <+2192>:	pushq  $0x6176a0
+   0x00000000004066ab <+2197>:	pushq  $0x6176a0
+   0x00000000004066b0 <+2202>:	pushq  $0x6176a0
+   0x00000000004066b5 <+2207>:	pushq  $0x6176a0
+   0x00000000004066ba <+2212>:	pushq  $0x6176a0
+   0x00000000004066bf <+2217>:	pushq  $0x6176a0
+   0x00000000004066c4 <+2222>:	pushq  $0x6176a0
+   0x00000000004066c9 <+2227>:	pushq  $0x6176a0
+   0x00000000004066ce <+2232>:	pushq  $0x6176a0
+   0x00000000004066d3 <+2237>:	pushq  $0x6176a0
+   0x00000000004066d8 <+2242>:	pushq  $0x6176a0
+   0x00000000004066dd <+2247>:	pushq  $0x6176a0
+   0x00000000004066e2 <+2252>:	pushq  $0x6176a0
+   0x00000000004066e7 <+2257>:	pushq  $0x6176a0
+   0x00000000004066ec <+2262>:	pushq  $0x6176a0
+   0x00000000004066f1 <+2267>:	pushq  $0x6176a0
+   0x00000000004066f6 <+2272>:	pushq  $0x6176a0
+   0x00000000004066fb <+2277>:	pushq  $0x6176a0
+   0x0000000000406700 <+2282>:	pushq  $0x6176a0
+   0x0000000000406705 <+2287>:	pushq  $0x6176a0
+   0x000000000040670a <+2292>:	pushq  $0x6176a0
+   0x000000000040670f <+2297>:	pushq  $0x6176a0
+   0x0000000000406714 <+2302>:	pushq  $0x6176a0
+   0x0000000000406719 <+2307>:	pushq  $0x6176a0
+   0x000000000040671e <+2312>:	pushq  $0x6176a0
+   0x0000000000406723 <+2317>:	pushq  $0x6176a0
+   0x0000000000406728 <+2322>:	mov    $0x6176a0,%r9d
+   0x000000000040672e <+2328>:	mov    $0x6176a0,%r8d
+   0x0000000000406734 <+2334>:	mov    $0x6176a0,%ecx
+   0x0000000000406739 <+2339>:	mov    %rax,%rdi
+   0x000000000040673c <+2342>:	callq  0x4058c0 <_ZN7sc_core9sc_moduleclERKNS_13sc_bind_proxyES3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_S3_@plt>
+   0x0000000000406741 <+2347>:	add    $0x1e0,%rsp
+   0x0000000000406748 <+2354>:	mov    $0x1,%edx
+   0x000000000040674d <+2359>:	mov    $0x2,%esi
+   0x0000000000406752 <+2364>:	mov    $0x0,%edi
+   0x0000000000406757 <+2369>:	callq  0x406c71 <sc_core::sc_start(int, sc_core::sc_time_unit, sc_core::sc_starvation_policy)>
+   0x000000000040675c <+2374>:	movl   $0x0,-0x14(%rbp)
+   0x0000000000406763 <+2381>:	cmpl   $0x31,-0x14(%rbp)
+   0x0000000000406767 <+2385>:	jg     0x4067cb <sc_main(int, char**)+2485>
+   0x0000000000406769 <+2387>:	movb   $0x1,-0x16(%rbp)
+   0x000000000040676d <+2391>:	lea    -0x16(%rbp),%rdx
+   0x0000000000406771 <+2395>:	lea    -0x790(%rbp),%rax
+   0x0000000000406778 <+2402>:	mov    %rdx,%rsi
+   0x000000000040677b <+2405>:	mov    %rax,%rdi
+   0x000000000040677e <+2408>:	callq  0x405c60 <_ZN7sc_core9sc_signalIbLNS_16sc_writer_policyE0EE5writeERKb@plt>
+   0x0000000000406783 <+2413>:	mov    $0x1,%edx
+   0x0000000000406788 <+2418>:	mov    $0x2,%esi
+   0x000000000040678d <+2423>:	mov    $0xa,%edi
+   0x0000000000406792 <+2428>:	callq  0x406c71 <sc_core::sc_start(int, sc_core::sc_time_unit, sc_core::sc_starvation_policy)>
+   0x0000000000406797 <+2433>:	movb   $0x0,-0x15(%rbp)
+   0x000000000040679b <+2437>:	lea    -0x15(%rbp),%rdx
+   0x000000000040679f <+2441>:	lea    -0x790(%rbp),%rax
+   0x00000000004067a6 <+2448>:	mov    %rdx,%rsi
+   0x00000000004067a9 <+2451>:	mov    %rax,%rdi
+   0x00000000004067ac <+2454>:	callq  0x405c60 <_ZN7sc_core9sc_signalIbLNS_16sc_writer_policyE0EE5writeERKb@plt>
+   0x00000000004067b1 <+2459>:	mov    $0x1,%edx
+   0x00000000004067b6 <+2464>:	mov    $0x2,%esi
+   0x00000000004067bb <+2469>:	mov    $0xa,%edi
+   0x00000000004067c0 <+2474>:	callq  0x406c71 <sc_core::sc_start(int, sc_core::sc_time_unit, sc_core::sc_starvation_policy)>
+   0x00000000004067c5 <+2479>:	addl   $0x1,-0x14(%rbp)
+   0x00000000004067c9 <+2483>:	jmp    0x406763 <sc_main(int, char**)+2381>
+   0x00000000004067cb <+2485>:	mov    $0x0,%ebx
+   0x00000000004067d0 <+2490>:	lea    -0x16e0(%rbp),%rax
+   0x00000000004067d7 <+2497>:	mov    %rax,%rdi
+   0x00000000004067da <+2500>:	callq  0x40a9f4 <display::~display()>
+   0x00000000004067df <+2505>:	lea    -0x14e0(%rbp),%rax
+   0x00000000004067e6 <+2512>:	mov    %rax,%rdi
+   0x00000000004067e9 <+2515>:	callq  0x40aace <stage3::~stage3()>
+   0x00000000004067ee <+2520>:	lea    -0x11b0(%rbp),%rax
+   0x00000000004067f5 <+2527>:	mov    %rax,%rdi
+   0x00000000004067f8 <+2530>:	callq  0x40abfa <stage2::~stage2()>
+   0x00000000004067fd <+2535>:	lea    -0xdf0(%rbp),%rax
+   0x0000000000406804 <+2542>:	mov    %rax,%rdi
+   0x0000000000406807 <+2545>:	callq  0x40ad54 <stage1::~stage1()>
+   0x000000000040680c <+2550>:	lea    -0xa30(%rbp),%rax
+   0x0000000000406813 <+2557>:	mov    %rax,%rdi
+   0x0000000000406816 <+2560>:	callq  0x40a8f0 <numgen::~numgen()>
+   0x000000000040681b <+2565>:	lea    -0x790(%rbp),%rax
+   0x0000000000406822 <+2572>:	mov    %rax,%rdi
+   0x0000000000406825 <+2575>:	callq  0x405a10 <_ZN7sc_core9sc_signalIbLNS_16sc_writer_policyE0EED1Ev@plt>
+   0x000000000040682a <+2580>:	lea    -0x6c0(%rbp),%rax
+   0x0000000000406831 <+2587>:	mov    %rax,%rdi
+   0x0000000000406834 <+2590>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406839 <+2595>:	lea    -0x610(%rbp),%rax
+   0x0000000000406840 <+2602>:	mov    %rax,%rdi
+   0x0000000000406843 <+2605>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406848 <+2610>:	lea    -0x560(%rbp),%rax
+   0x000000000040684f <+2617>:	mov    %rax,%rdi
+   0x0000000000406852 <+2620>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406857 <+2625>:	lea    -0x4b0(%rbp),%rax
+   0x000000000040685e <+2632>:	mov    %rax,%rdi
+   0x0000000000406861 <+2635>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406866 <+2640>:	lea    -0x400(%rbp),%rax
+   0x000000000040686d <+2647>:	mov    %rax,%rdi
+   0x0000000000406870 <+2650>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406875 <+2655>:	lea    -0x350(%rbp),%rax
+   0x000000000040687c <+2662>:	mov    %rax,%rdi
+   0x000000000040687f <+2665>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406884 <+2670>:	lea    -0x2a0(%rbp),%rax
+   0x000000000040688b <+2677>:	mov    %rax,%rdi
+   0x000000000040688e <+2680>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406893 <+2685>:	mov    %ebx,%eax
+   0x0000000000406895 <+2687>:	jmpq   0x406a7e <sc_main(int, char**)+3176>
+   0x000000000040689a <+2692>:	mov    %rax,%rbx
+   0x000000000040689d <+2695>:	lea    -0x1f0(%rbp),%rax
+   0x00000000004068a4 <+2702>:	mov    %rax,%rdi
+   0x00000000004068a7 <+2705>:	callq  0x405c50 <_ZN7sc_core14sc_module_nameD1Ev@plt>
+   0x00000000004068ac <+2710>:	jmpq   0x4069d8 <sc_main(int, char**)+3010>
+   0x00000000004068b1 <+2715>:	mov    %rax,%rbx
+   0x00000000004068b4 <+2718>:	lea    -0xa30(%rbp),%rax
+   0x00000000004068bb <+2725>:	mov    %rax,%rdi
+   0x00000000004068be <+2728>:	callq  0x40a8f0 <numgen::~numgen()>
+   0x00000000004068c3 <+2733>:	jmpq   0x4069d8 <sc_main(int, char**)+3010>
+   0x00000000004068c8 <+2738>:	mov    %rax,%rbx
+   0x00000000004068cb <+2741>:	lea    -0x190(%rbp),%rax
+   0x00000000004068d2 <+2748>:	mov    %rax,%rdi
+   0x00000000004068d5 <+2751>:	callq  0x405c50 <_ZN7sc_core14sc_module_nameD1Ev@plt>
+   0x00000000004068da <+2756>:	jmpq   0x4069c4 <sc_main(int, char**)+2990>
+   0x00000000004068df <+2761>:	mov    %rax,%rbx
+   0x00000000004068e2 <+2764>:	lea    -0xdf0(%rbp),%rax
+   0x00000000004068e9 <+2771>:	mov    %rax,%rdi
+   0x00000000004068ec <+2774>:	callq  0x40ad54 <stage1::~stage1()>
+   0x00000000004068f1 <+2779>:	jmpq   0x4069c4 <sc_main(int, char**)+2990>
+   0x00000000004068f6 <+2784>:	mov    %rax,%rbx
+   0x00000000004068f9 <+2787>:	lea    -0x160(%rbp),%rax
+   0x0000000000406900 <+2794>:	mov    %rax,%rdi
+   0x0000000000406903 <+2797>:	callq  0x405c50 <_ZN7sc_core14sc_module_nameD1Ev@plt>
+   0x0000000000406908 <+2802>:	jmpq   0x4069b0 <sc_main(int, char**)+2970>
+   0x000000000040690d <+2807>:	mov    %rax,%rbx
+   0x0000000000406910 <+2810>:	lea    -0x11b0(%rbp),%rax
+   0x0000000000406917 <+2817>:	mov    %rax,%rdi
+   0x000000000040691a <+2820>:	callq  0x40abfa <stage2::~stage2()>
+   0x000000000040691f <+2825>:	jmpq   0x4069b0 <sc_main(int, char**)+2970>
+   0x0000000000406924 <+2830>:	mov    %rax,%rbx
+   0x0000000000406927 <+2833>:	lea    -0xe0(%rbp),%rax
+   0x000000000040692e <+2840>:	mov    %rax,%rdi
+   0x0000000000406931 <+2843>:	callq  0x405c50 <_ZN7sc_core14sc_module_nameD1Ev@plt>
+   0x0000000000406936 <+2848>:	jmp    0x40699c <sc_main(int, char**)+2950>
+   0x0000000000406938 <+2850>:	mov    %rax,%rbx
+   0x000000000040693b <+2853>:	lea    -0x14e0(%rbp),%rax
+   0x0000000000406942 <+2860>:	mov    %rax,%rdi
+   0x0000000000406945 <+2863>:	callq  0x40aace <stage3::~stage3()>
+   0x000000000040694a <+2868>:	jmp    0x40699c <sc_main(int, char**)+2950>
+   0x000000000040694c <+2870>:	mov    %rax,%rbx
+   0x000000000040694f <+2873>:	lea    -0x70(%rbp),%rax
+   0x0000000000406953 <+2877>:	mov    %rax,%rdi
+   0x0000000000406956 <+2880>:	callq  0x405c50 <_ZN7sc_core14sc_module_nameD1Ev@plt>
+   0x000000000040695b <+2885>:	jmp    0x406988 <sc_main(int, char**)+2930>
+   0x000000000040695d <+2887>:	mov    %rax,%rbx
+   0x0000000000406960 <+2890>:	lea    -0x16e0(%rbp),%rax
+   0x0000000000406967 <+2897>:	mov    %rax,%rdi
+   0x000000000040696a <+2900>:	callq  0x40a9f4 <display::~display()>
+   0x000000000040696f <+2905>:	jmp    0x406988 <sc_main(int, char**)+2930>
+   0x0000000000406971 <+2907>:	mov    %rax,%rbx
+   0x0000000000406974 <+2910>:	lea    -0x16e0(%rbp),%rax
+   0x000000000040697b <+2917>:	mov    %rax,%rdi
+   0x000000000040697e <+2920>:	callq  0x40a9f4 <display::~display()>
+   0x0000000000406983 <+2925>:	jmp    0x406988 <sc_main(int, char**)+2930>
+   0x0000000000406985 <+2927>:	mov    %rax,%rbx
+   0x0000000000406988 <+2930>:	lea    -0x14e0(%rbp),%rax
+   0x000000000040698f <+2937>:	mov    %rax,%rdi
+   0x0000000000406992 <+2940>:	callq  0x40aace <stage3::~stage3()>
+   0x0000000000406997 <+2945>:	jmp    0x40699c <sc_main(int, char**)+2950>
+   0x0000000000406999 <+2947>:	mov    %rax,%rbx
+   0x000000000040699c <+2950>:	lea    -0x11b0(%rbp),%rax
+   0x00000000004069a3 <+2957>:	mov    %rax,%rdi
+   0x00000000004069a6 <+2960>:	callq  0x40abfa <stage2::~stage2()>
+   0x00000000004069ab <+2965>:	jmp    0x4069b0 <sc_main(int, char**)+2970>
+   0x00000000004069ad <+2967>:	mov    %rax,%rbx
+   0x00000000004069b0 <+2970>:	lea    -0xdf0(%rbp),%rax
+   0x00000000004069b7 <+2977>:	mov    %rax,%rdi
+   0x00000000004069ba <+2980>:	callq  0x40ad54 <stage1::~stage1()>
+   0x00000000004069bf <+2985>:	jmp    0x4069c4 <sc_main(int, char**)+2990>
+   0x00000000004069c1 <+2987>:	mov    %rax,%rbx
+   0x00000000004069c4 <+2990>:	lea    -0xa30(%rbp),%rax
+   0x00000000004069cb <+2997>:	mov    %rax,%rdi
+   0x00000000004069ce <+3000>:	callq  0x40a8f0 <numgen::~numgen()>
+   0x00000000004069d3 <+3005>:	jmp    0x4069d8 <sc_main(int, char**)+3010>
+   0x00000000004069d5 <+3007>:	mov    %rax,%rbx
+   0x00000000004069d8 <+3010>:	lea    -0x790(%rbp),%rax
+   0x00000000004069df <+3017>:	mov    %rax,%rdi
+   0x00000000004069e2 <+3020>:	callq  0x405a10 <_ZN7sc_core9sc_signalIbLNS_16sc_writer_policyE0EED1Ev@plt>
+   0x00000000004069e7 <+3025>:	jmp    0x4069ec <sc_main(int, char**)+3030>
+   0x00000000004069e9 <+3027>:	mov    %rax,%rbx
+   0x00000000004069ec <+3030>:	lea    -0x6c0(%rbp),%rax
+   0x00000000004069f3 <+3037>:	mov    %rax,%rdi
+   0x00000000004069f6 <+3040>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x00000000004069fb <+3045>:	jmp    0x406a00 <sc_main(int, char**)+3050>
+   0x00000000004069fd <+3047>:	mov    %rax,%rbx
+   0x0000000000406a00 <+3050>:	lea    -0x610(%rbp),%rax
+   0x0000000000406a07 <+3057>:	mov    %rax,%rdi
+   0x0000000000406a0a <+3060>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406a0f <+3065>:	jmp    0x406a14 <sc_main(int, char**)+3070>
+   0x0000000000406a11 <+3067>:	mov    %rax,%rbx
+   0x0000000000406a14 <+3070>:	lea    -0x560(%rbp),%rax
+   0x0000000000406a1b <+3077>:	mov    %rax,%rdi
+   0x0000000000406a1e <+3080>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406a23 <+3085>:	jmp    0x406a28 <sc_main(int, char**)+3090>
+   0x0000000000406a25 <+3087>:	mov    %rax,%rbx
+   0x0000000000406a28 <+3090>:	lea    -0x4b0(%rbp),%rax
+   0x0000000000406a2f <+3097>:	mov    %rax,%rdi
+   0x0000000000406a32 <+3100>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406a37 <+3105>:	jmp    0x406a3c <sc_main(int, char**)+3110>
+   0x0000000000406a39 <+3107>:	mov    %rax,%rbx
+   0x0000000000406a3c <+3110>:	lea    -0x400(%rbp),%rax
+   0x0000000000406a43 <+3117>:	mov    %rax,%rdi
+   0x0000000000406a46 <+3120>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406a4b <+3125>:	jmp    0x406a50 <sc_main(int, char**)+3130>
+   0x0000000000406a4d <+3127>:	mov    %rax,%rbx
+   0x0000000000406a50 <+3130>:	lea    -0x350(%rbp),%rax
+   0x0000000000406a57 <+3137>:	mov    %rax,%rdi
+   0x0000000000406a5a <+3140>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406a5f <+3145>:	jmp    0x406a64 <sc_main(int, char**)+3150>
+   0x0000000000406a61 <+3147>:	mov    %rax,%rbx
+   0x0000000000406a64 <+3150>:	lea    -0x2a0(%rbp),%rax
+   0x0000000000406a6b <+3157>:	mov    %rax,%rdi
+   0x0000000000406a6e <+3160>:	callq  0x4084fc <sc_core::sc_signal<double, (sc_core::sc_writer_policy)0>::~sc_signal()>
+   0x0000000000406a73 <+3165>:	mov    %rbx,%rax
+   0x0000000000406a76 <+3168>:	mov    %rax,%rdi
+   0x0000000000406a79 <+3171>:	callq  0x405c10 <_Unwind_Resume@plt>
+   0x0000000000406a7e <+3176>:	mov    -0x8(%rbp),%rbx
+   0x0000000000406a82 <+3180>:	leaveq 
+   0x0000000000406a83 <+3181>:	retq   
+End of assembler dump.
+Line 86 of "main.cpp" starts at address 0x406a84 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x406a92 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "numgen.cpp" starts at address 0x40eca7 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ecb5 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "stage1.cpp" starts at address 0x40e945 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40e953 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 53 of "stage2.cpp" starts at address 0x40eac6 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ead4 <__static_initialization_and_destruction_0(int, int)+14>.
+No line number information available for address 0x40ebd0 <__static_initialization_and_destruction_0(int, int)>
+Line 45 of "display.cpp" starts at address 0x40ed46 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ed54 <__static_initialization_and_destruction_0(int, int)+14>.
+
+Temporary breakpoint 2, numgen::generate (this=0x7fffffffd030) at numgen.cpp:45
+45	  a -= 1.5;
+Dump of assembler code for function numgen::generate():
+   0x000000000040ec32 <+0>:	push   %rbp
+   0x000000000040ec33 <+1>:	mov    %rsp,%rbp
+   0x000000000040ec36 <+4>:	sub    $0x10,%rsp
+   0x000000000040ec3a <+8>:	mov    %rdi,-0x8(%rbp)
+=> 0x000000000040ec3e <+12>:	movsd  0x208782(%rip),%xmm0        # 0x6173c8 <_ZZN6numgen8generateEvE1a>
+   0x000000000040ec46 <+20>:	movsd  0x2ca2(%rip),%xmm1        # 0x4118f0
+   0x000000000040ec4e <+28>:	subsd  %xmm1,%xmm0
+   0x000000000040ec52 <+32>:	movsd  %xmm0,0x20876e(%rip)        # 0x6173c8 <_ZZN6numgen8generateEvE1a>
+   0x000000000040ec5a <+40>:	movsd  0x20876e(%rip),%xmm0        # 0x6173d0 <_ZZN6numgen8generateEvE1b>
+   0x000000000040ec62 <+48>:	movsd  0x2c8e(%rip),%xmm1        # 0x4118f8
+   0x000000000040ec6a <+56>:	subsd  %xmm1,%xmm0
+   0x000000000040ec6e <+60>:	movsd  %xmm0,0x20875a(%rip)        # 0x6173d0 <_ZZN6numgen8generateEvE1b>
+   0x000000000040ec76 <+68>:	mov    -0x8(%rbp),%rax
+   0x000000000040ec7a <+72>:	add    $0xd0,%rax
+   0x000000000040ec80 <+78>:	mov    $0x6173c8,%esi
+   0x000000000040ec85 <+83>:	mov    %rax,%rdi
+   0x000000000040ec88 <+86>:	callq  0x40c952 <sc_core::sc_inout<double>::write(double const&)>
+   0x000000000040ec8d <+91>:	mov    -0x8(%rbp),%rax
+   0x000000000040ec91 <+95>:	add    $0x168,%rax
+   0x000000000040ec97 <+101>:	mov    $0x6173d0,%esi
+   0x000000000040ec9c <+106>:	mov    %rax,%rdi
+   0x000000000040ec9f <+109>:	callq  0x40c952 <sc_core::sc_inout<double>::write(double const&)>
+   0x000000000040eca4 <+114>:	nop
+   0x000000000040eca5 <+115>:	leaveq 
+   0x000000000040eca6 <+116>:	retq   
+End of assembler dump.
+Line 86 of "main.cpp" starts at address 0x406a84 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x406a92 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "numgen.cpp" starts at address 0x40eca7 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ecb5 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "stage1.cpp" starts at address 0x40e945 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40e953 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 53 of "stage2.cpp" starts at address 0x40eac6 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ead4 <__static_initialization_and_destruction_0(int, int)+14>.
+No line number information available for address 0x40ebd0 <__static_initialization_and_destruction_0(int, int)>
+Line 45 of "display.cpp" starts at address 0x40ed46 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ed54 <__static_initialization_and_destruction_0(int, int)+14>.
+
+Temporary breakpoint 3, stage1::addsub (this=0x7fffffffcc70) at stage1.cpp:45
+45	  a = in1.read();
+Dump of assembler code for function stage1::addsub():
+   0x000000000040e8ae <+0>:	push   %rbp
+   0x000000000040e8af <+1>:	mov    %rsp,%rbp
+   0x000000000040e8b2 <+4>:	sub    $0x30,%rsp
+   0x000000000040e8b6 <+8>:	mov    %rdi,-0x28(%rbp)
+=> 0x000000000040e8ba <+12>:	mov    -0x28(%rbp),%rax
+   0x000000000040e8be <+16>:	add    $0xd0,%rax
+   0x000000000040e8c4 <+22>:	mov    %rax,%rdi
+   0x000000000040e8c7 <+25>:	callq  0x40e9a8 <sc_core::sc_in<double>::read() const>
+   0x000000000040e8cc <+30>:	movsd  (%rax),%xmm0
+   0x000000000040e8d0 <+34>:	movsd  %xmm0,-0x8(%rbp)
+   0x000000000040e8d5 <+39>:	mov    -0x28(%rbp),%rax
+   0x000000000040e8d9 <+43>:	add    $0x160,%rax
+   0x000000000040e8df <+49>:	mov    %rax,%rdi
+   0x000000000040e8e2 <+52>:	callq  0x40e9a8 <sc_core::sc_in<double>::read() const>
+   0x000000000040e8e7 <+57>:	movsd  (%rax),%xmm0
+   0x000000000040e8eb <+61>:	movsd  %xmm0,-0x10(%rbp)
+   0x000000000040e8f0 <+66>:	movsd  -0x8(%rbp),%xmm0
+   0x000000000040e8f5 <+71>:	addsd  -0x10(%rbp),%xmm0
+   0x000000000040e8fa <+76>:	movsd  %xmm0,-0x20(%rbp)
+   0x000000000040e8ff <+81>:	mov    -0x28(%rbp),%rax
+   0x000000000040e903 <+85>:	lea    0x1f0(%rax),%rdx
+   0x000000000040e90a <+92>:	lea    -0x20(%rbp),%rax
+   0x000000000040e90e <+96>:	mov    %rax,%rsi
+   0x000000000040e911 <+99>:	mov    %rdx,%rdi
+   0x000000000040e914 <+102>:	callq  0x40c952 <sc_core::sc_inout<double>::write(double const&)>
+   0x000000000040e919 <+107>:	movsd  -0x8(%rbp),%xmm0
+   0x000000000040e91e <+112>:	subsd  -0x10(%rbp),%xmm0
+   0x000000000040e923 <+117>:	movsd  %xmm0,-0x18(%rbp)
+   0x000000000040e928 <+122>:	mov    -0x28(%rbp),%rax
+   0x000000000040e92c <+126>:	lea    0x288(%rax),%rdx
+   0x000000000040e933 <+133>:	lea    -0x18(%rbp),%rax
+   0x000000000040e937 <+137>:	mov    %rax,%rsi
+   0x000000000040e93a <+140>:	mov    %rdx,%rdi
+   0x000000000040e93d <+143>:	callq  0x40c952 <sc_core::sc_inout<double>::write(double const&)>
+   0x000000000040e942 <+148>:	nop
+   0x000000000040e943 <+149>:	leaveq 
+   0x000000000040e944 <+150>:	retq   
+End of assembler dump.
+Line 86 of "main.cpp" starts at address 0x406a84 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x406a92 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "numgen.cpp" starts at address 0x40eca7 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ecb5 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "stage1.cpp" starts at address 0x40e945 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40e953 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 53 of "stage2.cpp" starts at address 0x40eac6 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ead4 <__static_initialization_and_destruction_0(int, int)+14>.
+No line number information available for address 0x40ebd0 <__static_initialization_and_destruction_0(int, int)>
+Line 45 of "display.cpp" starts at address 0x40ed46 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ed54 <__static_initialization_and_destruction_0(int, int)+14>.
+
+Temporary breakpoint 4, stage2::multdiv (this=0x7fffffffc8b0) at stage2.cpp:45
+45	  a = sum.read();
+Dump of assembler code for function stage2::multdiv():
+   0x000000000040ea0c <+0>:	push   %rbp
+   0x000000000040ea0d <+1>:	mov    %rsp,%rbp
+   0x000000000040ea10 <+4>:	sub    $0x30,%rsp
+   0x000000000040ea14 <+8>:	mov    %rdi,-0x28(%rbp)
+=> 0x000000000040ea18 <+12>:	mov    -0x28(%rbp),%rax
+   0x000000000040ea1c <+16>:	add    $0xd0,%rax
+   0x000000000040ea22 <+22>:	mov    %rax,%rdi
+   0x000000000040ea25 <+25>:	callq  0x40e9a8 <sc_core::sc_in<double>::read() const>
+   0x000000000040ea2a <+30>:	movsd  (%rax),%xmm0
+   0x000000000040ea2e <+34>:	movsd  %xmm0,-0x10(%rbp)
+   0x000000000040ea33 <+39>:	mov    -0x28(%rbp),%rax
+   0x000000000040ea37 <+43>:	add    $0x160,%rax
+   0x000000000040ea3d <+49>:	mov    %rax,%rdi
+   0x000000000040ea40 <+52>:	callq  0x40e9a8 <sc_core::sc_in<double>::read() const>
+   0x000000000040ea45 <+57>:	movsd  (%rax),%xmm0
+   0x000000000040ea49 <+61>:	movsd  %xmm0,-0x8(%rbp)
+   0x000000000040ea4e <+66>:	pxor   %xmm0,%xmm0
+   0x000000000040ea52 <+70>:	ucomisd -0x8(%rbp),%xmm0
+   0x000000000040ea57 <+75>:	jp     0x40ea71 <stage2::multdiv()+101>
+   0x000000000040ea59 <+77>:	pxor   %xmm0,%xmm0
+   0x000000000040ea5d <+81>:	ucomisd -0x8(%rbp),%xmm0
+   0x000000000040ea62 <+86>:	jne    0x40ea71 <stage2::multdiv()+101>
+   0x000000000040ea64 <+88>:	movsd  0x2d0c(%rip),%xmm0        # 0x411778
+   0x000000000040ea6c <+96>:	movsd  %xmm0,-0x8(%rbp)
+   0x000000000040ea71 <+101>:	movsd  -0x10(%rbp),%xmm0
+   0x000000000040ea76 <+106>:	mulsd  -0x8(%rbp),%xmm0
+   0x000000000040ea7b <+111>:	movsd  %xmm0,-0x20(%rbp)
+   0x000000000040ea80 <+116>:	mov    -0x28(%rbp),%rax
+   0x000000000040ea84 <+120>:	lea    0x1f0(%rax),%rdx
+   0x000000000040ea8b <+127>:	lea    -0x20(%rbp),%rax
+   0x000000000040ea8f <+131>:	mov    %rax,%rsi
+   0x000000000040ea92 <+134>:	mov    %rdx,%rdi
+   0x000000000040ea95 <+137>:	callq  0x40c952 <sc_core::sc_inout<double>::write(double const&)>
+   0x000000000040ea9a <+142>:	movsd  -0x10(%rbp),%xmm0
+   0x000000000040ea9f <+147>:	divsd  -0x8(%rbp),%xmm0
+   0x000000000040eaa4 <+152>:	movsd  %xmm0,-0x18(%rbp)
+   0x000000000040eaa9 <+157>:	mov    -0x28(%rbp),%rax
+   0x000000000040eaad <+161>:	lea    0x288(%rax),%rdx
+   0x000000000040eab4 <+168>:	lea    -0x18(%rbp),%rax
+   0x000000000040eab8 <+172>:	mov    %rax,%rsi
+   0x000000000040eabb <+175>:	mov    %rdx,%rdi
+   0x000000000040eabe <+178>:	callq  0x40c952 <sc_core::sc_inout<double>::write(double const&)>
+   0x000000000040eac3 <+183>:	nop
+   0x000000000040eac4 <+184>:	leaveq 
+   0x000000000040eac5 <+185>:	retq   
+End of assembler dump.
+Line 86 of "main.cpp" starts at address 0x406a84 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x406a92 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "numgen.cpp" starts at address 0x40eca7 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ecb5 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "stage1.cpp" starts at address 0x40e945 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40e953 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 53 of "stage2.cpp" starts at address 0x40eac6 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ead4 <__static_initialization_and_destruction_0(int, int)+14>.
+No line number information available for address 0x40ebd0 <__static_initialization_and_destruction_0(int, int)>
+Line 45 of "display.cpp" starts at address 0x40ed46 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ed54 <__static_initialization_and_destruction_0(int, int)+14>.
+
+Temporary breakpoint 5, stage3::power (this=0x7fffffffc580) at stage3.cpp:47
+47	  a = prod.read();
+Dump of assembler code for function stage3::power():
+   0x000000000040eb28 <+0>:	push   %rbp
+   0x000000000040eb29 <+1>:	mov    %rsp,%rbp
+   0x000000000040eb2c <+4>:	sub    $0x30,%rsp
+   0x000000000040eb30 <+8>:	mov    %rdi,-0x28(%rbp)
+=> 0x000000000040eb34 <+12>:	mov    -0x28(%rbp),%rax
+   0x000000000040eb38 <+16>:	add    $0xd0,%rax
+   0x000000000040eb3e <+22>:	mov    %rax,%rdi
+   0x000000000040eb41 <+25>:	callq  0x40e9a8 <sc_core::sc_in<double>::read() const>
+   0x000000000040eb46 <+30>:	movsd  (%rax),%xmm0
+   0x000000000040eb4a <+34>:	movsd  %xmm0,-0x8(%rbp)
+   0x000000000040eb4f <+39>:	mov    -0x28(%rbp),%rax
+   0x000000000040eb53 <+43>:	add    $0x160,%rax
+   0x000000000040eb59 <+49>:	mov    %rax,%rdi
+   0x000000000040eb5c <+52>:	callq  0x40e9a8 <sc_core::sc_in<double>::read() const>
+   0x000000000040eb61 <+57>:	movsd  (%rax),%xmm0
+   0x000000000040eb65 <+61>:	movsd  %xmm0,-0x10(%rbp)
+   0x000000000040eb6a <+66>:	movsd  -0x8(%rbp),%xmm0
+   0x000000000040eb6f <+71>:	pxor   %xmm1,%xmm1
+   0x000000000040eb73 <+75>:	ucomisd %xmm1,%xmm0
+   0x000000000040eb77 <+79>:	jbe    0x40ebaa <stage3::power()+130>
+   0x000000000040eb79 <+81>:	movsd  -0x10(%rbp),%xmm0
+   0x000000000040eb7e <+86>:	pxor   %xmm1,%xmm1
+   0x000000000040eb82 <+90>:	ucomisd %xmm1,%xmm0
+   0x000000000040eb86 <+94>:	jbe    0x40ebaa <stage3::power()+130>
+   0x000000000040eb88 <+96>:	movsd  -0x10(%rbp),%xmm0
+   0x000000000040eb8d <+101>:	mov    -0x8(%rbp),%rax
+   0x000000000040eb91 <+105>:	movapd %xmm0,%xmm1
+   0x000000000040eb95 <+109>:	mov    %rax,-0x30(%rbp)
+   0x000000000040eb99 <+113>:	movsd  -0x30(%rbp),%xmm0
+   0x000000000040eb9e <+118>:	callq  0x4058d0 <pow@plt>
+   0x000000000040eba3 <+123>:	movq   %xmm0,%rax
+   0x000000000040eba8 <+128>:	jmp    0x40ebaf <stage3::power()+135>
+   0x000000000040ebaa <+130>:	mov    $0x0,%eax
+   0x000000000040ebaf <+135>:	mov    %rax,-0x18(%rbp)
+   0x000000000040ebb3 <+139>:	mov    -0x28(%rbp),%rax
+   0x000000000040ebb7 <+143>:	lea    0x1f0(%rax),%rdx
+   0x000000000040ebbe <+150>:	lea    -0x18(%rbp),%rax
+   0x000000000040ebc2 <+154>:	mov    %rax,%rsi
+   0x000000000040ebc5 <+157>:	mov    %rdx,%rdi
+   0x000000000040ebc8 <+160>:	callq  0x40c952 <sc_core::sc_inout<double>::write(double const&)>
+   0x000000000040ebcd <+165>:	nop
+   0x000000000040ebce <+166>:	leaveq 
+   0x000000000040ebcf <+167>:	retq   
+End of assembler dump.
+Line 86 of "main.cpp" starts at address 0x406a84 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x406a92 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "numgen.cpp" starts at address 0x40eca7 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ecb5 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "stage1.cpp" starts at address 0x40e945 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40e953 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 53 of "stage2.cpp" starts at address 0x40eac6 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ead4 <__static_initialization_and_destruction_0(int, int)+14>.
+No line number information available for address 0x40ebd0 <__static_initialization_and_destruction_0(int, int)>
+Line 45 of "display.cpp" starts at address 0x40ed46 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ed54 <__static_initialization_and_destruction_0(int, int)+14>.
+
+Temporary breakpoint 6, display::print_result (this=0x7fffffffc380) at display.cpp:44
+44	    printf("Result = %f\n", in.read());
+Dump of assembler code for function display::print_result():
+   0x000000000040ed0a <+0>:	push   %rbp
+   0x000000000040ed0b <+1>:	mov    %rsp,%rbp
+   0x000000000040ed0e <+4>:	sub    $0x10,%rsp
+   0x000000000040ed12 <+8>:	mov    %rdi,-0x8(%rbp)
+=> 0x000000000040ed16 <+12>:	mov    -0x8(%rbp),%rax
+   0x000000000040ed1a <+16>:	add    $0xd0,%rax
+   0x000000000040ed20 <+22>:	mov    %rax,%rdi
+   0x000000000040ed23 <+25>:	callq  0x40e9a8 <sc_core::sc_in<double>::read() const>
+   0x000000000040ed28 <+30>:	mov    (%rax),%rax
+   0x000000000040ed2b <+33>:	mov    %rax,-0x10(%rbp)
+   0x000000000040ed2f <+37>:	movsd  -0x10(%rbp),%xmm0
+   0x000000000040ed34 <+42>:	mov    $0x4119a0,%edi
+   0x000000000040ed39 <+47>:	mov    $0x1,%eax
+   0x000000000040ed3e <+52>:	callq  0x4055d0 <printf@plt>
+   0x000000000040ed43 <+57>:	nop
+   0x000000000040ed44 <+58>:	leaveq 
+   0x000000000040ed45 <+59>:	retq   
+End of assembler dump.
+Line 86 of "main.cpp" starts at address 0x406a84 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x406a92 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "numgen.cpp" starts at address 0x40eca7 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ecb5 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 50 of "stage1.cpp" starts at address 0x40e945 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40e953 <__static_initialization_and_destruction_0(int, int)+14>.
+Line 53 of "stage2.cpp" starts at address 0x40eac6 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ead4 <__static_initialization_and_destruction_0(int, int)+14>.
+No line number information available for address 0x40ebd0 <__static_initialization_and_destruction_0(int, int)>
+Line 45 of "display.cpp" starts at address 0x40ed46 <__static_initialization_and_destruction_0(int, int)>
+   and ends at 0x40ed54 <__static_initialization_and_destruction_0(int, int)+14>.
+[Inferior 1 (process 14053) exited normally]
+(gdb) quit

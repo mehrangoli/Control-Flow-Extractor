@@ -5,8 +5,8 @@ This repository includes a static and dynamic data extractor that enables users 
 This tool is able to generate XML and TXT formats of the extracted control flow (process and function activation) of the design.
 
 For details on the techniques behind see the following publications 
-"AIBA: Automated Intra-Cycle Behavioral Analysis for SystemC-based Design Exploration" by Mehran Goli, Jannis Stoppe, and Rolf Drechsler accepted at ICCD 2016.
-"Automated Non-intrusive Analysis of Electronic System Level Designs" by Mehran Goli, Jannis Stoppe, and Rolf Drechsler accepted at TCAD 2018.
+- "AIBA: Automated Intra-Cycle Behavioral Analysis for SystemC-based Design Exploration" by Mehran Goli, Jannis Stoppe, and Rolf Drechsler accepted at ICCD 2016.
+- "Automated Non-intrusive Analysis of Electronic System Level Designs" by Mehran Goli, Jannis Stoppe, and Rolf Drechsler accepted at TCAD 2018.
 
 
 ## Clone

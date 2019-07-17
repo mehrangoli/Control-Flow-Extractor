@@ -1,0 +1,125 @@
+set logging on gdblog.txt
+set logging redirect on
+set height 0
+set confirm off
+tbreak sc_main
+commands
+	
+	disassemble sc_main
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak icache::init_param
+commands
+	
+	disassemble icache::init_param
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak icache::entry
+commands
+	
+	disassemble icache::entry
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak exec::entry
+commands
+	
+	disassemble exec::entry
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak pic::entry
+commands
+	
+	disassemble pic::entry
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak decode::entry
+commands
+	
+	disassemble decode::entry
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak bios::init_param
+commands
+	
+	disassemble bios::init_param
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak bios::entry
+commands
+	
+	disassemble bios::entry
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak paging::entry
+commands
+	
+	disassemble paging::entry
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak mmxu::entry
+commands
+	
+	disassemble mmxu::entry
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak dcache::init_param
+commands
+	
+	disassemble dcache::init_param
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak dcache::entry
+commands
+	
+	disassemble dcache::entry
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak floating::entry
+commands
+	
+	disassemble floating::entry
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak fetch::init_param
+commands
+	
+	disassemble fetch::init_param
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+tbreak fetch::entry
+commands
+	
+	disassemble fetch::entry
+	info line __static_initialization_and_destruction_0(int, int)
+	c
+end
+
+run
